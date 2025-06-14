@@ -1,100 +1,9 @@
-            </section>
-
-            <!-- 6. 산업 리스크 및 도전과제 -->
-            <section class="section">
-                <h2>⚠️ 화장품 산업의 주요 리스크와 도전과제</h2>
-
-                <h3>🔬 규제 환경 변화: 새로운 도전과 기회</h3>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>규제 영역</th>
-                                <th>현재 상황</th>
-                                <th>예상 영향</th>
-                                <th>대응 전략</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>PFAS 규제</strong></td>
-                                <td>EU 2026년 전면 금지</td>
-                                <td><span class="risk-indicator risk-high">고위험</span></td>
-                                <td>PFAS-Free 제형 개발</td>
-                            </tr>
-                            <tr>
-                                <td><strong>플라스틱 포장재</strong></td>
-                                <td>순환경제법 강화</td>
-                                <td><span class="risk-indicator risk-medium">중위험</span></td>
-                                <td>재생 소재 95% 이상 활용</td>
-                            </tr>
-                            <tr>
-                                <td><strong>동물실험 금지</strong></td>
-                                <td>글로벌 확산</td>
-                                <td><span class="risk-indicator risk-low">기회</span></td>
-                                <td>대체시험법 투자</td>
-                            </tr>
-                            <tr>
-                                <td><strong>성분 투명성</strong></td>
-                                <td>소비자 요구 증가</td>
-                                <td><span class="risk-indicator risk-low">기회</span></td>
-                                <td>클린 라벨링 전략</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3>📊 소비자 세분화와 지식 격차</h3>
-                <div class="highlight">
-                    <strong>세대별 다른 요구사항:</strong> 알파세대(AI 네이티브), 밀레니얼(지속가능성), X세대(프리미엄), 베이비부머(안전성) 등 세대별 맞춤 전략 필요. 소비자 지식 수준 향상으로 투명성과 책임감 요구 급증.
-                </div>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">73%</div>
-                        <div class="stat-label">성분 확인하는 소비자</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$1.2B</div>
-                        <div class="stat-label">PFAS 대체 기술 투자</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">45%</div>
-                        <div class="stat-label">포장재 재활용률 목표</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">92%</div>
-                        <div class="stat-label">동물실험 반대 응답률</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 7. 향후 전망 및 제안 -->
-            <section class="section">
-                <h2>🔮 향후 화장품 산업 전망과 전략적 제안사항</h2>
-
-                <h3>📈 2025-2030년 핵심 성장 동력</h3>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>성장 동력</th>
-                                <th>현재 상황</th>
-                                <th>예상 성장률</th>
-                                <th>전략적 기회</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>천연 화장품</strong></td>
-                                <td>$52.4B → $95.7B (2035)</td>
-                                <td><span class="growth-positive">+14.8%</span></td>
-                                <td>무화학 제<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>글로벌 화장품 산업 전망 리포트 2025</title>
+    <title>글로벌 화장품 산업 전망 리포트 2025 (동적 보고서)</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <style>
         * {
@@ -131,10 +40,8 @@
         .header::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="3" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="70" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
             animation: float 20s infinite linear;
         }
@@ -147,32 +54,73 @@
         .header h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
+            position: relative; z-index: 1;
         }
 
         .header p {
             font-size: 1.2rem;
             opacity: 0.9;
-            position: relative;
-            z-index: 1;
+            position: relative; z-index: 1;
         }
 
-        .content {
+        /* 탭 스타일 */
+        .tab-container {
+            display: flex;
+            background: #f1f3f5;
+            padding: 0 2rem;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .tab-link {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #495057;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-link:hover {
+            background-color: #e9ecef;
+        }
+
+        .tab-link.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .content { padding: 0; }
+
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.5s;
             padding: 2rem;
         }
 
+        .tab-pane.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
         .section {
             margin-bottom: 3rem;
             padding: 2rem;
             border-radius: 15px;
             background: linear-gradient(145deg, #f8f9fa, #e9ecef);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             transition: transform 0.3s ease;
+            opacity: 0; /* 스크롤 애니메이션 초기 상태 */
+            transform: translateY(20px);
         }
 
-        .section:hover {
-            transform: translateY(-5px);
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0px);
         }
 
         .section h2 {
@@ -202,53 +150,37 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
             margin: 2rem 0;
         }
 
         .stat-card {
             background: linear-gradient(145deg, #667eea, #764ba2);
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
+            color: white; padding: 2rem;
+            border-radius: 15px; text-align: center;
             box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
             transition: transform 0.3s ease;
         }
-
-        .stat-card:hover {
-            transform: scale(1.05);
-        }
-
+        .stat-card:hover { transform: scale(1.05); }
         .stat-number {
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
-
-        .stat-label {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
+        .stat-label { font-size: 1rem; opacity: 0.9; }
         .chart-container {
             position: relative;
-            height: 400px;
-            margin: 2rem 0;
-            background: white;
-            border-radius: 15px;
-            padding: 1rem;
+            height: 400px; width: 100%;
+            margin: 2rem 0; background: white;
+            border-radius: 15px; padding: 1.5rem;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-
         .table-container {
-            overflow-x: auto;
-            margin: 2rem 0;
+            overflow-x: auto; margin: 2rem 0;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
@@ -256,137 +188,42 @@
             border-radius: 15px;
             overflow: hidden;
         }
-
         th {
             background: linear-gradient(145deg, #667eea, #764ba2);
-            color: white;
-            padding: 1rem;
-            text-align: left;
-            font-weight: 600;
+            color: white; padding: 1rem;
+            text-align: left; font-weight: 600;
         }
-
         td {
             padding: 1rem;
             border-bottom: 1px solid #eee;
             transition: background-color 0.3s ease;
         }
-
-        tr:hover td {
-            background-color: #f8f9fa;
+        tr:hover td { background-color: #f8f9fa; }
+        .growth-positive { color: #28a745; font-weight: bold; }
+        .growth-negative { color: #dc3545; font-weight: bold; }
+        .risk-indicator {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.25rem 0.75rem; border-radius: 20px;
+            font-size: 0.9rem; font-weight: bold;
         }
-
-        .growth-positive {
-            color: #28a745;
-            font-weight: bold;
+        .risk-high { background: #f8d7da; color: #721c24; }
+        .risk-medium { background: #fff3cd; color: #856404; }
+        .risk-low { background: #d4edda; color: #155724; }
+        .trend-indicator {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.25rem 0.75rem; border-radius: 20px;
+            font-size: 0.9rem; font-weight: bold;
         }
-
-        .growth-negative {
-            color: #dc3545;
-            font-weight: bold;
-        }
-
-        .footer {
-            background: #2c3e50;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .references {
-            background: #ecf0f1;
-            padding: 2rem;
-            border-radius: 15px;
-            margin-top: 2rem;
-        }
-
-        .references h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-
-        .references ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .references li {
-            margin-bottom: 0.5rem;
-            padding-left: 1rem;
-            position: relative;
-        }
-
-        .references li::before {
-            content: "📊";
-            position: absolute;
-            left: 0;
-        }
+        .trend-up { background: #d4edda; color: #155724; }
+        .trend-down { background: #f8d7da; color: #721c24; }
+        .trend-stable { background: #fff3cd; color: #856404; }
 
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .content {
-                padding: 1rem;
-            }
-            
-            .section {
-                padding: 1rem;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .trend-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-
-        .trend-up {
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .trend-down {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        .trend-stable {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .risk-indicator {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-
-        .risk-high {
-            background: #f8d7da;
-            color: #721c24;
-        }
-
-        .risk-medium {
-            background: #fff3cd;
-            color: #856404;
-        }
-
-        .risk-low {
-            background: #d4edda;
-            color: #155724;
+            .header h1 { font-size: 2rem; }
+            .tab-container { flex-wrap: wrap; padding: 0 1rem; }
+            .tab-link { flex-grow: 1; text-align: center; }
+            .content, .tab-pane, .section { padding: 1rem; }
+            .stats-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -397,250 +234,383 @@
             <p>성장 동력, 지역별 동향 및 기술 혁신 종합 분석</p>
         </header>
 
+        <nav class="tab-container">
+            <div class="tab-link active" data-tab="tab-1">시장 개요</div>
+            <div class="tab-link" data-tab="tab-2">지역별 분석</div>
+            <div class="tab-link" data-tab="tab-3">글로벌 기업</div>
+            <div class="tab-link" data-tab="tab-4">한국 기업</div>
+            <div class="tab-link" data-tab="tab-5">기술 트렌드</div>
+            <div class="tab-link" data-tab="tab-6">리스크 및 과제</div>
+        </nav>
+
         <main class="content">
-            <!-- 1. 시장 개요 -->
-            <section class="section">
-                <h2>🌍 현재 화장품 산업의 놀라운 성장세</h2>
+            <div id="tab-1" class="tab-pane active">
+                <section class="section">
+                    <h2>🌍 현재 화장품 산업의 놀라운 성장세</h2>
+                    <div class="highlight">
+                        <strong>핵심 인사이트:</strong> 글로벌 화장품 시장은 2024년 3,359억 달러를 기록하며 팬데믹 이후 강력한 회복세를 보이고 있습니다. 2025-2030년까지 연평균 5-6.6% 성장을 유지하여 2030년 5,562억 달러 규모로 확대될 전망입니다.
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="336">0</div>
+                            <div class="stat-label">2024년 시장 규모 (B)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="6.1">0</div>
+                            <div class="stat-label">연평균 성장률 (%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="556">0</div>
+                            <div class="stat-label">2030년 예상 규모 (B)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="45">0</div>
+                            <div class="stat-label">아시아 태평양 점유율 (%)</div>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="marketGrowthChart"></canvas>
+                    </div>
+                </section>
+            </div>
+
+            <div id="tab-2" class="tab-pane">
+                <section class="section">
+                    <h2>🗺️ 주요 국가별 화장품 시장 분석</h2>
+                    <div class="table-container">
+                        <table id="regional-market-table">
+                            <thead><tr><th>국가/지역</th><th>시장 규모 (2024, $B)</th><th>성장률</th><th>주요 특징</th><th>트렌드</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>🇺🇸 미국</strong></td><td>20.8</td><td><span class="trend-indicator trend-up">+6.1%</span></td><td>스킨케어 42.8% 점유</td><td>남성 화장품 급성장</td></tr>
+                                <tr><td><strong>🇪🇺 유럽</strong></td><td>105</td><td><span class="trend-indicator trend-up">+6.35%</span></td><td>독일, 프랑스, 이탈리아 주도</td><td>클린 뷰티 선호</td></tr>
+                                <tr><td><strong>🇨🇳 중국</strong></td><td>17.6</td><td><span class="trend-indicator trend-stable">+5.89%</span></td><td>국산 브랜드 50% 점유</td><td>라이브 커머스 활성화</td></tr>
+                                <tr><td><strong>🇯🇵 일본</strong></td><td>22.8</td><td><span class="trend-indicator trend-up">+4.2%</span></td><td>1인당 소비 세계 최고</td><td>J-뷰티 글로벌 확산</td></tr>
+                                <tr><td><strong>🇰🇷 한국</strong></td><td>3.9</td><td><span class="trend-indicator trend-up">+9.3%</span></td><td>수출 $92억 (세계 4위)</td><td>K-뷰티 열풍</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="regionalMarketChart"></canvas>
+                    </div>
+                </section>
+            </div>
+            
+            <div id="tab-3" class="tab-pane">
+                 <section class="section">
+                    <h2>🏢 글로벌 주요 화장품 기업 경쟁력 분석</h2>
+                    <div class="table-container">
+                        <table id="market-share-table">
+                            <thead><tr><th>기업</th><th>2024년 매출 ($B)</th><th>성장률</th><th>시장점유율</th><th>핵심 브랜드</th><th>최근 주요 동향</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>🇫🇷 로레알</strong></td><td>47</td><td><span class="growth-positive">+5.6%</span></td><td>20%</td><td>로레알 파리, 메이블린, 란콤</td><td>한국 닥터지 인수</td></tr>
+                                <tr><td><strong>🇬🇧 유니레버</strong></td><td>13.8</td><td><span class="growth-positive">+8.3%</span></td><td>12%</td><td>도브, TRESemmé, 러브뷰티</td><td>K18 헤어케어 인수</td></tr>
+                                <tr><td><strong>🇺🇸 P&G</strong></td><td>84</td><td><span class="growth-positive">+3%</span></td><td>8%</td><td>올레이, SK-II, 팬틴</td><td>중국 시장 고전</td></tr>
+                                <tr><td><strong>🇺🇸 에스티 로더</strong></td><td>15.6</td><td><span class="growth-negative">-2%</span></td><td>6%</td><td>에스티 로더, 맥, 클리니크</td><td>디시엠(DECIEM) 인수</td></tr>
+                                <tr><td><strong>🇯🇵 시세이도</strong></td><td>6.5</td><td><span class="growth-positive">+1.8%</span></td><td>3%</td><td>시세이도, NARS, 베어미네랄</td><td>중국 시장 부진으로 적자</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="marketShareChart"></canvas>
+                    </div>
+                </section>
+            </div>
+            
+            <div id="tab-4" class="tab-pane">
+                <section class="section">
+                    <h2>🇰🇷 한국 화장품 기업들의 글로벌 경쟁력</h2>
+                    <div class="stats-grid">
+                         <div class="stat-card">
+                            <div class="stat-number" data-count="3.9">0</div>
+                            <div class="stat-label">아모레퍼시픽 매출 (조원)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">LG생활건강 매출 ($B)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="2.17">0</div>
+                            <div class="stat-label">코스맥스 매출 (조원)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="2.3">0</div>
+                            <div class="stat-label">한국콜마 매출 (조원)</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>아모레퍼시픽:</strong> 2024년 해외 매출 1.68조원(20.6% 성장), 아메리카 지역이 최대 시장으로 부상.<br>
+                        <strong>코스맥스:</strong> 연간 29억개 제품 생산, 미국 수출 46.7% 급증으로 K-뷰티 글로벌 확산 주도.
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="koreanCompaniesChart"></canvas>
+                    </div>
+                </section>
+            </div>
+
+            <div id="tab-5" class="tab-pane">
+                <section class="section">
+                    <h2>🚀 첨단 기술이 이끄는 화장품 산업의 디지털 전환</h2>
+                    <h3>🌱 지속가능 & 개인맞춤형 AI 기술</h3>
+                     <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="14.8">0</div>
+                            <div class="stat-label">천연 화장품 성장률 (%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="95.7">0</div>
+                            <div class="stat-label">2035년 천연 시장 규모 ($B)</div>
+                        </div>
+                         <div class="stat-card">
+                            <div class="stat-number" data-count="9.4">0</div>
+                            <div class="stat-label">K-뷰티 연평균 성장률 (%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="212.5">0</div>
+                            <div class="stat-label">2032년 K-뷰티 시장 ($B)</div>
+                        </div>
+                    </div>
+                     <div class="chart-container">
+                        <canvas id="technologyTrendsChart"></canvas>
+                    </div>
+                </section>
+            </div>
+            
+            <div id="tab-6" class="tab-pane">
+                 <section class="section">
+                    <h2>⚠️ 화장품 산업의 주요 리스크와 도전과제</h2>
+                    <h3>🔬 규제 환경 변화: 새로운 도전과 기회</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead><tr><th>규제 영역</th><th>현재 상황</th><th>예상 영향</th><th>대응 전략</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>PFAS 규제</strong></td><td>EU 2026년 전면 금지</td><td><span class="risk-indicator risk-high">고위험</span></td><td>PFAS-Free 제형 개발</td></tr>
+                                <tr><td><strong>플라스틱 포장재</strong></td><td>순환경제법 강화</td><td><span class="risk-indicator risk-medium">중위험</span></td><td>재생 소재 95% 이상 활용</td></tr>
+                                <tr><td><strong>동물실험 금지</strong></td><td>글로벌 확산</td><td><span class="risk-indicator risk-low">기회</span></td><td>대체시험법 투자</td></tr>
+                                <tr><td><strong>성분 투명성</strong></td><td>소비자 요구 증가</td><td><span class="risk-indicator risk-low">기회</span></td><td>클린 라벨링 전략</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="73">0</div>
+                            <div class="stat-label">성분 확인 소비자 (%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="1.2">0</div>
+                            <div class="stat-label">PFAS 대체 기술 투자 ($B)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="45">0</div>
+                            <div class="stat-label">포장재 재활용률 목표 (%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="92">0</div>
+                            <div class="stat-label">동물실험 반대 응답률 (%)</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ------------------------------------
+    // 1. 탭 기능 활성화 (Tab Functionality)
+    // ------------------------------------
+    const tabs = document.querySelectorAll('.tab-link');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // ⭐ [수정된 부분] ⭐
+            // querySelector가 ID를 찾을 수 있도록 '#'를 추가합니다.
+            const targetId = tab.dataset.tab;
+            const target = document.querySelector('#' + targetId);
+
+            // target이 null이 아닐 때만 로직을 실행하도록 안전장치 추가
+            if (target) {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                tabPanes.forEach(pane => pane.classList.remove('active'));
+                target.classList.add('active');
                 
-                <div class="highlight">
-                    <strong>핵심 인사이트:</strong> 글로벌 화장품 시장은 2024년 3,359억 달러를 기록하며 팬데믹 이후 강력한 회복세를 보이고 있습니다. 2025-2030년까지 연평균 5-6.6% 성장을 유지하여 2030년 5,562억 달러 규모로 확대될 전망입니다.
-                </div>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">$336B</div>
-                        <div class="stat-label">2024년 시장 규모</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">6.1%</div>
-                        <div class="stat-label">연평균 성장률</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$556B</div>
-                        <div class="stat-label">2030년 예상 규모</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">45%</div>
-                        <div class="stat-label">아시아 태평양 점유율</div>
-                    </div>
-                </div>
-
-                <div class="chart-container">
-                    <canvas id="marketGrowthChart"></canvas>
-                </div>
-            </section>
-
-            <!-- 4. 한국 기업 분석 -->
-            <section class="section">
-                <h2>🇰🇷 한국 화장품 기업들의 글로벌 경쟁력</h2>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">₩3.9T</div>
-                        <div class="stat-label">아모레퍼시픽 매출</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$5B</div>
-                        <div class="stat-label">LG생활건강 매출</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">₩2.17T</div>
-                        <div class="stat-label">코스맥스 매출</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">₩2.3T</div>
-                        <div class="stat-label">한국콜마 매출</div>
-                    </div>
-                </div>
-
-                <h3>🏆 아모레퍼시픽: 글로벌 리밸런싱 성공</h3>
-                <div class="highlight">
-                    <strong>핵심 성과:</strong> 2024년 해외 매출 1.68조원(20.6% 성장)으로 급성장. 아메리카 지역이 최대 해외 시장으로 부상하며 중국 의존도 성공적 분산.
-                </div>
-
-                <h3>🔬 코스맥스: 세계 최대 ODM 기업</h3>
-                <div class="highlight">
-                    <strong>혁신 역량:</strong> 연간 29억개 제품 생산, 19개 공장을 5개국 운영. 미국 수출 46.7% 급증으로 K-뷰티 글로벌 확산 주도.
-                </div>
-
-                <div class="chart-container">
-                    <canvas id="koreanCompaniesChart"></canvas>
-                </div>
-            </section>
-
-            <!-- 5. 최신 기술 트렌드 -->
-            <section class="section">
-                <h2>🚀 첨단 기술이 이끄는 화장품 산업의 디지털 전환</h2>
-
-                <h3>💡 K-뷰티 기술혁신: 전통과 현대의 융합</h3>
-                <ul>
-                    <li><strong>발효 기술</strong>: 설화수 전통 한방 발효, SK-II 갈락토마이세스 등 글로벌 표준화</li>
-                    <li><strong>AI 융합</strong>: 시세이도 Beauty AR Navigation, 아모레퍼시픽 립큐어 빔 (CES 2024 혁신상)</li>
-                    <li><strong>기술 구매</strong>: 2024년 2,231만 달러 → 2026년 2억 2,317만 달러 전망</li>
-                </ul>
-
-                <h3>🌱 지속가능 기술: 순환경제의 새로운 패러다임</h3>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">14.8%</div>
-                        <div class="stat-label">천연 화장품 성장률</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$95.7B</div>
-                        <div class="stat-label">2035년 천연 시장 규모</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">$603M</div>
-                        <div class="stat-label">2033년 솔리드 화장품</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">95%</div>
-                        <div class="stat-label">재활용 패키징 목표</div>
-                    </div>
-                </div>
-
-                <h3>🎯 개인맞춤형 AI 기술: 정밀 뷰티의 시대</h3>
-                <div class="highlight">
-                    <strong>AI 혁신 현황:</strong> K-뷰티 브랜드들이 AI 진단과 데이터 기반 맞춤형 솔루션을 선도. 엑소좀 세럼, 글래스 스킨 마스크 등 혁신 제품으로 개인화 시장 확대. 건강과 웰니스 통합으로 홀리스틱 뷰티 구현.
-                </div>
-
-                <h3>🚀 K-뷰티 글로벌 확산: 한류를 넘어선 기술 혁신</h3>
-                <ul>
-                    <li><strong>시장 규모 급성장</strong>: 2025년 $113.3B → 2032년 $212.5B (연평균 9.4% 성장)</li>
-                    <li><strong>지역별 확산</strong>: 멕시코, 인도, 미국에서 옴니채널 전략으로 현지화 성공</li>
-                    <li><strong>혁신 제품</strong>: LED 마스크, 달팽이 점액 추출물, 미니멀리스트 스킨케어 트렌드</li>
-                    <li><strong>기술 융합</strong>: AI 진단부터 개인맞춤 제형까지 엔드투엔드 솔루션</li>
-                </ul>
-
-                <div class="chart-container">
-                    <canvas id="technologyTrendsChart"></canvas>
-                </div>
-            </section>
-
-            <!-- 2. 지역별 시장 분석 -->
-            <section class="section">
-                <h2>🗺️ 주요 국가별 화장품 시장 분석</h2>
-
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>국가/지역</th>
-                                <th>시장 규모 (2024)</th>
-                                <th>성장률</th>
-                                <th>주요 특징</th>
-                                <th>트렌드</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>🇺🇸 미국</strong></td>
-                                <td>$208억</td>
-                                <td><span class="trend-indicator trend-up">+6.1%</span></td>
-                                <td>스킨케어 42.8% 점유</td>
-                                <td>남성 화장품 급성장</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇪🇺 유럽</strong></td>
-                                <td>€960억 ($105B)</td>
-                                <td><span class="trend-indicator trend-up">+6.35%</span></td>
-                                <td>독일, 프랑스, 이탈리아 주도</td>
-                                <td>클린 뷰티 선호</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇨🇳 중국</strong></td>
-                                <td>$176억</td>
-                                <td><span class="trend-indicator trend-stable">+5.89%</span></td>
-                                <td>국산 브랜드 50% 점유</td>
-                                <td>라이브 커머스 활성화</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇯🇵 일본</strong></td>
-                                <td>$228억</td>
-                                <td><span class="trend-indicator trend-up">+4.2%</span></td>
-                                <td>1인당 소비 세계 최고</td>
-                                <td>J-뷰티 글로벌 확산</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇰🇷 한국</strong></td>
-                                <td>$39억 (내수)</td>
-                                <td><span class="trend-indicator trend-up">+9.3%</span></td>
-                                <td>수출 $92억 (세계 4위)</td>
-                                <td>K-뷰티 열풍</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="chart-container">
-                    <canvas id="regionalMarketChart"></canvas>
-                </div>
-            </section>
-
-            <!-- 3. 글로벌 주요 기업 분석 -->
-            <section class="section">
-                <h2>🏢 글로벌 주요 화장품 기업 경쟁력 분석</h2>
-
-                <h3>시장 리더들의 성과</h3>
+                // 탭 전환 시 차트 다시 그리기 (애니메이션 효과)
+                renderAllCharts(); 
+            }
+        });
+    });
+    
+    // ----------------------------------------------------
+    // 2. 스크롤 애니메이션 (Scroll Animations)
+    // ----------------------------------------------------
+    const animateOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 섹션 보이기
+                if (entry.target.classList.contains('section')) {
+                    entry.target.classList.add('visible');
+                }
                 
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>기업</th>
-                                <th>2024년 매출</th>
-                                <th>성장률</th>
-                                <th>시장점유율</th>
-                                <th>핵심 브랜드</th>
-                                <th>최근 주요 동향</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>🇫🇷 로레알</strong></td>
-                                <td>€434억 ($47B)</td>
-                                <td><span class="growth-positive">+5.6%</span></td>
-                                <td>20%</td>
-                                <td>로레알 파리, 메이블린, 란콤</td>
-                                <td>한국 닥터지 인수</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇬🇧 유니레버</strong></td>
-                                <td>€138억 (뷰티)</td>
-                                <td><span class="growth-positive">+8.3%</span></td>
-                                <td>12%</td>
-                                <td>도브, TRESemmé, 러브뷰티</td>
-                                <td>K18 헤어케어 인수</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇺🇸 P&G</strong></td>
-                                <td>$840억 (전체)</td>
-                                <td><span class="growth-positive">+3%</span></td>
-                                <td>8%</td>
-                                <td>올레이, SK-II, 팬틴</td>
-                                <td>중국 시장 고전</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇺🇸 에스티 로더</strong></td>
-                                <td>$156억</td>
-                                <td><span class="growth-negative">-2%</span></td>
-                                <td>6%</td>
-                                <td>에스티 로더, 맥, 클리니크</td>
-                                <td>디시엠(DECIEM) 인수</td>
-                            </tr>
-                            <tr>
-                                <td><strong>🇯🇵 시세이도</strong></td>
-                                <td>$65억</td>
-                                <td><span class="growth-positive">+1.8%</span></td>
-                                <td>3%</td>
-                                <td>시세이도, NARS, 베어미네랄</td>
-                                <td>중국 시장 부진으로 적자</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                // 숫자 카운트업 애니메이션
+                const counters = entry.target.querySelectorAll('.stat-number');
+                counters.forEach(counter => {
+                    const targetCount = parseFloat(counter.dataset.count);
+                    if (counter.dataset.animated) return;
+                    counter.dataset.animated = 'true';
+                    
+                    let currentCount = 0;
+                    const increment = targetCount / 100;
 
-                <div class="chart-container">
-                    <canvas id="marketShareChart"></canvas>
-                </div>
-            </section>
+                    const updateCounter = () => {
+                        currentCount += increment;
+                        if (currentCount < targetCount) {
+                            // 소수점 유무에 따라 포맷팅
+                            if (targetCount % 1 !== 0) {
+                                counter.innerText = currentCount.toFixed(1);
+                            } else {
+                                counter.innerText = Math.ceil(currentCount);
+                            }
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = targetCount;
+                        }
+                    };
+                    updateCounter();
+                });
+
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(animateOnScroll, {
+        root: null,
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.section, .stat-card').forEach(el => observer.observe(el));
+
+    // ------------------------------------
+    // 3. 차트 생성 (Chart Generation)
+    // ------------------------------------
+    let charts = {}; // 생성된 차트 객체 저장
+
+    function destroyChart(chartId) {
+        if (charts[chartId]) {
+            charts[chartId].destroy();
+            delete charts[chartId];
+        }
+    }
+
+    function renderAllCharts() {
+        Object.keys(charts).forEach(id => destroyChart(id));
+
+        // 차트 1: 시장 성장률
+        const marketGrowthCtx = document.getElementById('marketGrowthChart')?.getContext('2d');
+        if (marketGrowthCtx) {
+            charts.marketGrowthChart = new Chart(marketGrowthCtx, {
+                type: 'line',
+                data: {
+                    labels: ['2023', '2024', '2025', '2027', '2030'],
+                    datasets: [{
+                        label: '글로벌 시장 규모 ($B)',
+                        data: [315, 336, 355, 430, 556],
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: '글로벌 화장품 시장 성장 전망' }}}
+            });
+        }
+        
+        // 차트 2: 지역별 시장 규모
+        const regionalMarketCtx = document.getElementById('regionalMarketChart')?.getContext('2d');
+        if (regionalMarketCtx) {
+            charts.regionalMarketChart = new Chart(regionalMarketCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['유럽', '일본', '미국', '중국', '한국'],
+                    datasets: [{
+                        label: '시장 규모 (2024, $B)',
+                        data: [105, 22.8, 20.8, 17.6, 3.9],
+                        backgroundColor: ['#ff6b6b', '#ffa726', '#8e44ad', '#2980b9', '#27ae60'],
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: '주요 국가별 시장 규모 (2024)' }}}
+            });
+        }
+
+        // 차트 3: 글로벌 기업 시장 점유율
+        const marketShareCtx = document.getElementById('marketShareChart')?.getContext('2d');
+        if (marketShareCtx) {
+            charts.marketShareChart = new Chart(marketShareCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['로레알', '유니레버', 'P&G', '에스티 로더', '시세이도', '기타'],
+                    datasets: [{
+                        label: '시장 점유율 (%)',
+                        data: [20, 12, 8, 6, 3, 51],
+                        backgroundColor: ['#3498db', '#9b59b6', '#e74c3c', '#f1c40f', '#2ecc71', '#bdc3c7'],
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: '글로벌 기업 시장 점유율' }}}
+            });
+        }
+
+        // 차트 4: 한국 기업 매출
+        const koreanCompaniesCtx = document.getElementById('koreanCompaniesChart')?.getContext('2d');
+        if (koreanCompaniesCtx) {
+            charts.koreanCompaniesChart = new Chart(koreanCompaniesCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['아모레퍼시픽(조원)', 'LG생건($B)', '코스맥스(조원)', '한국콜마(조원)'],
+                    datasets: [{
+                        label: '매출액',
+                        data: [3.9, 5, 2.17, 2.3],
+                        backgroundColor: ['#e67e22', '#3498db', '#1abc9c', '#9b59b6'],
+                    }]
+                },
+                options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: '주요 한국 기업 매출 현황' }}}
+            });
+        }
+        
+        // 차트 5: 기술 트렌드 성장 전망
+        const techTrendsCtx = document.getElementById('technologyTrendsChart')?.getContext('2d');
+        if (techTrendsCtx) {
+            charts.technologyTrendsChart = new Chart(techTrendsCtx, {
+                type: 'line',
+                data: {
+                     labels: ['2025', '2027', '2029', '2032'],
+                    datasets: [{
+                        label: 'K-뷰티 시장 규모 ($B)',
+                        data: [113.3, 140, 175, 212.5],
+                        borderColor: '#16a085',
+                        backgroundColor: 'rgba(22, 160, 133, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }, {
+                       label: '천연화장품 시장 ($B, ~2035)',
+                       data: [52.4, 65, 80, 95.7],
+                       borderColor: '#f39c12',
+                       backgroundColor: 'rgba(243, 156, 18, 0.1)',
+                       fill: true,
+                       tension: 0.4
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: '기술 기반 시장 성장 전망' }}}
+            });
+        }
+    }
+
+    // 초기 로드 시 차트 생성
+    renderAllCharts();
+});
+</script>
+
+</body>
+</html>
